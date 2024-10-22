@@ -2,6 +2,10 @@ import mongoose from 'mongoose';
 
 const listingSchema = new mongoose.Schema(
     {
+      title: {
+        type: String,
+        required: true,
+      },
         name: {
           type: String,
           required: true,
@@ -67,6 +71,26 @@ const listingSchema = new mongoose.Schema(
             required: true,
           },
           offer: {
+            type: Boolean,
+            required: true,
+          },
+          accessCards: {
+            type: Boolean,
+            required: true,
+          },
+          communitySecurity: {
+            type: Boolean,
+            required: true,
+          },
+          cameras: {
+            type: Boolean,
+            required: true,
+          },
+          alarmSystem: {
+            type: Boolean,
+            required: true,
+          },
+          sensor: {
             type: Boolean,
             required: true,
           },
