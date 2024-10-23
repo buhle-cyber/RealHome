@@ -15,6 +15,7 @@ export default function CreateListing() {
   const [files, setFiles] = useState([]);
   const [formData, setFormData] = useState({
     imageUrls: [],
+    title: '', 
     name: '',
     description: '',
     address: '',
@@ -29,7 +30,7 @@ export default function CreateListing() {
     petfriendly: false,
     wifi: false,
     accessibility: false,
-    boreholwatersystem: false,
+    boreholewatersystem: false,
     pool: false,
     garden: false,
     communitySecurity: false, 
@@ -120,7 +121,7 @@ export default function CreateListing() {
       e.target.id === 'alarmSystem' ||
       e.target.id === 'address' ||
       e.target.id === 'accessibility' ||
-      e.target.id === 'boreholwatersystem' ||
+      e.target.id === 'boreholewatersystem' ||
       e.target.id === 'cameras' ||
       e.target.id === 'communitySecurity' ||
       e.target.id === 'garden' ||
@@ -198,11 +199,11 @@ export default function CreateListing() {
   value={formData.title}
 >
   <option value='' disabled>Select Title</option>
-  <option value='MR'>MR</option>
-  <option value='MISS'>MISS</option>
-  <option value='MRS'>MRS</option>
-  <option value='DR'>DR</option>
-  <option value='PROF'>PROF</option>
+  <option value='Flat'>Flat</option>
+  <option value='Apartment'>Apartment</option>
+  <option value='House'>House</option>
+  <option value='Room'>Room</option>
+  <option value='Vila'>Vila</option>
 </select>
           <input
             type='text'
@@ -280,7 +281,7 @@ export default function CreateListing() {
               <span>Accessibility</span>
             </div>
             <div className='flex gap-2'>
-              <input type='checkbox' id='boreholwatersystem' className='w-5 rounded-full border border-gray-400'  onChange={handleChange}
+              <input type='checkbox' id='boreholewatersystem' className='w-5 rounded-full border border-gray-400'  onChange={handleChange}
                   checked={formData.boreholewatersystem}/>
               <span>Borehole/Water System</span>
             </div>
