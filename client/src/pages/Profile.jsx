@@ -209,6 +209,14 @@ export default function Profile() {
           onChange={handleChange}
         />
         <input
+          type='tel'
+          placeholder='Contact Number'
+          id='tel'
+          defaultValue={currentUser.tel}
+          className='border p-3 rounded-lg'
+          onChange={handleChange}
+        />
+        <input
           type='password'
           placeholder='password'
           id='password'

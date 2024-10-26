@@ -58,6 +58,13 @@ export default function SignUp() {
           onChange={handleChange}
         />
         <input
+          type='tel'
+          placeholder='Contact Number'
+          className='border p-3 rounded-lg'
+          id='tel'
+          onChange={handleChange}
+        />
+        <input
           type='password'
           placeholder='password'
           className='border p-3 rounded-lg'
@@ -74,11 +81,15 @@ export default function SignUp() {
         <OAuth />
       </form>
       <div className='flex gap-2 mt-5'>
-        <p>Have an account?</p>
-        <Link to={'/sign-in'}>
-          <span className='text-blue-700'>Sign in</span>
-        </Link>
-      </div>
+  <p>Have an account?</p>
+  <Link to={'/sign-in'}>
+    <span className='text-blue-700'>Sign in</span>
+  </Link>
+  <Link to={'/forgot-password'}>
+    <span className='text-red-700'>Forgot Password</span>
+  </Link>
+</div>
+
       {error && <p className='text-red-500 mt-5'>{error}</p>}
     </div>
   );
