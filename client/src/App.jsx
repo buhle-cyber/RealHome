@@ -11,6 +11,7 @@ import UpdateListing from './pages/UpdateListing';
 import Listing from './pages/Listing';
 import ForgotPassword from './components/ForgotPassword';
 import Search from './pages/Search';
+import Agents from './pages/Agents';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path='/search' element={<Search />} />
         <Route path='/listing/:listingId' element={<Listing />} />
         <Route path='/forgot-password' element={<ForgotPassword />} />
+        <Route path='/agents' element={<Agents />} />
 
         <Route element={<PrivateRoute />}>
           <Route path='/profile' element={<Profile />} />
