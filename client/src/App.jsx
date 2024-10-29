@@ -12,6 +12,8 @@ import Listing from './pages/Listing';
 import ForgotPassword from './components/ForgotPassword';
 import Search from './pages/Search';
 import Agents from './pages/Agents';
+import ContactUs from './pages/ContactUs';
+import WishList from './pages/WishList';
 
 export default function App() {
   return (
@@ -26,14 +28,15 @@ export default function App() {
         <Route path='/listing/:listingId' element={<Listing />} />
         <Route path='/forgot-password' element={<ForgotPassword />} />
         <Route path='/agents' element={<Agents />} />
+        <Route path='/contact-us' element={<ContactUs />} />
 
         <Route element={<PrivateRoute />}>
           <Route path='/profile' element={<Profile />} />
           <Route path='/create-listing' element={<CreateListing />} />
           <Route
             path='/update-listing/:listingId'
-            element={<UpdateListing />}
-          />
+            element={<UpdateListing />} />
+            <Route path='/wish-list' element={<WishList />} />
         </Route>
       </Routes>
     </BrowserRouter>
