@@ -5,7 +5,7 @@ import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import 'swiper/css/bundle';
 import ListingItem from '../components/ListingItem';
-import logo from '../assets/symbol.png';
+import logo from '../assets/symbol.png'
 
 export default function Home() {
   const [offerListings, setOfferListings] = useState([]);
@@ -41,7 +41,7 @@ export default function Home() {
         const data = await res.json();
         setSaleListings(data);
       } catch (error) {
-        log(error);
+        console.log(error);
       }
     };
     fetchOfferListings();
@@ -51,21 +51,20 @@ export default function Home() {
       {/* top */}
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
         <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
-          Find your next <span className='text-slate-500'>perfect</span>
+        Discover your <span className='text-slate-500'>dream</span>
           <br />
-          place with ease
+          space effortlessly
         </h1>
         <div className='text-gray-400 text-xs sm:text-sm'>
-          Sahand Estate is the best place to find your next perfect place to
-          live.
+        RealHome is your ultimate destination for discovering ideal living spaces.
           <br />
-          We have a wide range of properties for you to choose from.
+          Explore an extensive selection of properties tailored to your needs.
         </div>
         <Link
           to={'/search'}
           className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
         >
-          Let's get started...
+          Click here to get started with your dream...
         </Link>
       </div>
 
@@ -130,10 +129,10 @@ export default function Home() {
           </div>
         )}
       </div>
-<footer className='bg-slate-800 text-white py-8'>
+      <footer className='bg-slate-800 text-white py-8'>
          <div className='max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-8 px-4'> 
           <div className='flex flex-col gap-4'> 
-            <h2 className='text-2xl font-semibold'>PrimePropertyHub</h2>
+            <h2 className='text-2xl font-semibold'>RealHome</h2>
             <img src={logo} alt='PrimePropertyHub Logo' className='h-30 w-80'></img>
           <p className='text-sm text-slate-400'>Connecting you with your dream home.</p> 
           <div className='flex gap-4'> <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer'> 
@@ -161,11 +160,11 @@ export default function Home() {
                 <ul className='text-sm text-slate-400'> 
                   <li>1687 Market Street Johannesburg, 2000 Gauteng, South Africa</li> 
                   <li>Phone: 051 430 9845</li> 
-                  <li>Email: primepropertyhub@gmail.com</li> 
+                  <li>Email: realhome@gmail.com</li> 
                   </ul> 
                   </div> 
                   </div> 
-          <div className='mt-8 text-center text-sm text-slate-400'> &copy; {new Date().getFullYear()} PrimePropertyHub. All rights reserved. 
+          <div className='mt-8 text-center text-sm text-slate-400'> &copy; {new Date().getFullYear()} RealHome. All rights reserved. 
             </div> 
       </footer>
     </div>

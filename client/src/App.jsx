@@ -13,7 +13,7 @@ import ForgotPassword from './components/ForgotPassword';
 import Search from './pages/Search';
 import Agents from './pages/Agents';
 import ContactUs from './pages/ContactUs';
-import WishList from './pages/WishList';
+import WishList from './components/WishList'; 
 
 export default function App() {
   return (
@@ -36,7 +36,7 @@ export default function App() {
           <Route
             path='/update-listing/:listingId'
             element={<UpdateListing />} />
-            <Route path='/wish-list' element={<WishList />} />
+            <Route path="/wish-list" element={<WishList />} />
         </Route>
       </Routes>
     </BrowserRouter>

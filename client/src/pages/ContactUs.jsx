@@ -18,7 +18,7 @@ export default function ContactUs() {
         <div className='border rounded-lg p-6 shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl bg-white bg-opacity-80'>
           <FaEnvelope className='text-3xl text-blue-600 mb-4' />
           <h2 className='text-xl font-semibold mb-2'>Email</h2>
-          <p className='text-gray-600'><a href='mailto:contact@primepropertyhub.com' className='text-blue-500 hover:underline'>primepropertyhub@gmail.com</a></p>
+          <p className='text-gray-600'><a href='mailto:contact@primepropertyhub.com' className='text-blue-500 hover:underline'>realhome@gmail.com</a></p>
         </div>
         <div className='border rounded-lg p-6 shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl bg-white bg-opacity-80'>
           <FaMapMarkerAlt className='text-3xl text-blue-600 mb-4' />

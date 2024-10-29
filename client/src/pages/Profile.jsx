@@ -226,7 +226,7 @@ export default function Profile() {
         <button disabled={loading} className='bg-slate-700 text-white rounded-lg p-3 uppercase hover:bg-slate-800'>{loading ? 'Loading...' : 'Update'}
         </button>
         <Link
-          className='bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:bg-green-900'
+          className='bg-slate-800 text-white p-3 rounded-lg uppercase text-center hover:bg-slate-900'
           to={'/create-listing'}
         >
           Create Listing
@@ -240,10 +240,20 @@ export default function Profile() {
         <p className='text-red-700 mt-5'>{error ? error : ''}</p>
       <p className='text-green-700 mt-5'>{updateSuccess ? 'User is updated successfully!' : ''}
       </p>
-      <button onClick={handleShowListings} className='bg-slate-800 w-full text-white rounded-lg p-3 uppercase hover:bg-slate-900'>Show Listing</button>
-      <p className='text-red-700 mt-5'>
-        {showListingsError ? 'Error showing listings' : ''}
-      </p>
+      
+      <Link
+  className='bg-slate-800 w-full text-white rounded-lg p-3 uppercase hover:bg-slate-900 mb-4'
+  to={'/wish-list'} 
+>
+  Wish List
+</Link>
+<button onClick={handleShowListings} className='bg-slate-800 w-full text-white rounded-lg p-3 uppercase hover:bg-slate-900 mb-4'>
+  Show Listing
+</button>
+<p className='text-red-700 mt-5'>
+  {showListingsError ? 'Error showing listings' : ''}
+</p>
+
 
        {userListings && userListings.length > 0 && (
         <div className='flex flex-col gap-4'>
