@@ -205,7 +205,7 @@ export default function CreateListing() {
   <option value='Apartment'>Apartment</option>
   <option value='House'>House</option>
   <option value='Room'>Room</option>
-  <option value='Vila'>Vila</option>
+  <option value='Vila'>Villa</option>
 </select>
           <input
             type='text'

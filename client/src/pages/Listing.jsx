@@ -61,9 +61,8 @@ export default function Listing() {
     fetchListing();
   }, [params.listingId]);
 
-  const address = listing?.address;
+  const address = listing?.address; 
   const googleMapsUrl = address ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}` : '';
-
   return (
     <main>
       {loading && <p className='text-center my-7 text-2xl'>Loading...</p>}
@@ -111,11 +110,10 @@ export default function Listing() {
               {listing.type === 'rent' && ' / month'}
             </p>
             <p className='flex items-center mt-6 gap-2 text-slate-600 text-sm'>
-              <FaMapMarkerAlt className='text-green-700' />
-              <a href={googleMapsUrl} target='_blank' rel='noopener noreferrer'>
-                {address}
-              </a>
-            </p>
+               <FaMapMarkerAlt className='text-green-700' /> 
+               <a href={googleMapsUrl} target='_blank' rel='noopener noreferrer'> {address} 
+               </a>
+               </p>
             <div className='flex gap-4'>
               <p className='bg-red-900 w-full max-w-[200px] text-white text-center p-1 rounded-md'>
                 {listing.type === 'rent' ? 'For Rent' : 'For Sale'}
