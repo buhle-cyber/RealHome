@@ -14,6 +14,10 @@ import Search from './pages/Search';
 import Agents from './pages/Agents';
 import ContactUs from './pages/ContactUs';
 import WishList from './components/WishList'; 
+import SoldPrices from './pages/SoldPrices';
+import PropertyGuide from './pages/PropertyGuide';
+import RentalPrice from './pages/RentalPrice';
+import Guide from './pages/Guide';
 
 export default function App() {
   return (
@@ -29,6 +33,10 @@ export default function App() {
         <Route path='/forgot-password' element={<ForgotPassword />} />
         <Route path='/agents' element={<Agents />} />
         <Route path='/contact-us' element={<ContactUs />} />
+        <Route path='/sold-prices' element={<SoldPrices />} /> 
+        <Route path='/property-guides' element={<PropertyGuide />} />
+        <Route path='/rental-advice' element={<RentalPrice />} />
+        <Route path='/selling-guide' element={<Guide />} />
 
         <Route element={<PrivateRoute />}>
           <Route path='/profile' element={<Profile />} />
