@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <header className='bg-slate-200 shadow-md'>
-      <div className='flex justify-between items-center max-w-6xl mx-auto p-5'>
+      <div className='flex justify-between items-center max-w-8xl mx-auto p-5'>
       <img src={logo} alt='PrimePropertyHub Logo' className='h-16 w-auto'></img>
       <Link to='/'>
         <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
